@@ -2060,7 +2060,37 @@ input, select, textarea {
 	}
 
 /* Button */
+	.viewProject {
+		position : relative;
+	}
 
+	.overImage {
+		
+		display : none;
+		position : absolute;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		top : 50%; 
+	}
+	.overPost {
+		
+		display : none;
+		position : absolute;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		top : 20%; 
+	}
+	
+	a:hover + .overImage, .overImage:hover {
+		display: inline-block;
+	}
+	a:hover + .overPost, .overPost:hover {
+		display: inline-block;
+	}
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -2215,8 +2245,8 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: inset 0 0 0 2px #18bfef;
-			color: #18bfef !important;
+			box-shadow: inset 0 0 0 2px #1851ef;
+			color: #1851ef !important;
 		}
 
 		input[type="submit"].primary,
@@ -2622,6 +2652,7 @@ input, select, textarea {
 			display: block;
 			margin: 2.5rem 0;
 			width: 100%;
+			border : 1px dashed black;
 		}
 
 			.image.fit:first-child {
@@ -2636,6 +2667,8 @@ input, select, textarea {
 			display: block;
 			margin: 4rem 0;
 			width: 100%;
+			position : relative;
+			border: 1px dashed black;
 		}
 
 			.image.main:first-child {
